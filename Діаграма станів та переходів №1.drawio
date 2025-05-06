@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram id="8h0gaqPpid-O9RSyVLQs" name="Сторінка-2">
+    <mxGraphModel dx="1869" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-1" value="" style="ellipse;fillColor=#000000;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-2" value="Ініціалізація системи&#xa;--&#xa;OnEntry/завантаження налаштувань&#xa;Do/перевірка з&#39;єднання з базою даних&#xa;OnExit/логування запуску" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-3" value="Очікування дій користувача&#xa;--&#xa;Do/відображення головного меню&#xa;OnExit/фіксація часу взаємодії" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="220" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-4" value="Обробка замовлення&#xa;--&#xa;OnEntry/створення нового замовлення&#xa;Do/додавання товарів до кошика&#xa;OnExit/розрахунок загальної суми" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="350" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-5" value="Перевірка наявності ліків&#xa;--&#xa;OnEntry/запит до бази даних&#xa;Do/валідація кількості&#xa;OnExit/оновлення статусу замовлення" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="880" y="470" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-6" value="Оформлення продажу&#xa;--&#xa;OnEntry/фіксація способу оплати&#xa;Do/обробка платежу&#xa;OnExit/генерація чеку" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="480" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-7" value="Оновлення інвентаря&#xa;--&#xa;OnEntry/зменшення кількості проданих ліків&#xa;Do/перевірка порогових значень&#xa;OnExit/формування звіту" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="650" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-8" value="Завершення&#xa;--&#xa;OnEntry/закриття транзакції&#xa;OnExit/повернення до головного меню" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="50" y="870" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-9" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="620" y="70" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-1" target="V-g9UBwAVLjhSVrPUmpE-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-11" value="[успішна ініціалізація]/відображення меню" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-2" target="V-g9UBwAVLjhSVrPUmpE-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-12" value="click(створити замовлення)/ініціалізація кошика" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-3" target="V-g9UBwAVLjhSVrPUmpE-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-13" value="select(додати ліки)/пошук у базі даних" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-4" target="V-g9UBwAVLjhSVrPUmpE-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-14" value="[ліки наявні]/додавання до кошика" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-5" target="V-g9UBwAVLjhSVrPUmpE-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="370" />
+              <mxPoint x="450" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-15" value="[ліки відсутні]/повідомлення про відсутність" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-5" target="V-g9UBwAVLjhSVrPUmpE-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="260" />
+              <mxPoint x="450" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-16" value="click(оформити замовлення)/розрахунок суми" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-4" target="V-g9UBwAVLjhSVrPUmpE-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-17" value="payment(успішно)/генерація чеку" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-6" target="V-g9UBwAVLjhSVrPUmpE-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-18" value="[всі операції успішні]/завершення транзакції" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-7" target="V-g9UBwAVLjhSVrPUmpE-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-19" value="[завершено]/очищення форми" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-8" target="V-g9UBwAVLjhSVrPUmpE-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-130" y="905" />
+              <mxPoint x="-130" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-20" value="click(закрити систему)/завершення роботи" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-3" target="V-g9UBwAVLjhSVrPUmpE-9" edge="1">
+          <mxGeometry x="0.5733" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V-g9UBwAVLjhSVrPUmpE-21" value="select(додати ще ліки)/додавання товару" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;curved=1;" parent="1" source="V-g9UBwAVLjhSVrPUmpE-4" target="V-g9UBwAVLjhSVrPUmpE-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="410" />
+              <mxPoint x="20" y="410" />
+              <mxPoint x="20" y="360" />
+            </Array>
+            <mxPoint x="170" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

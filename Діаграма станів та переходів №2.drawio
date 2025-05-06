@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram id="nwMbe5igaEoM5Pj98nBp" name="Сторінка-3">
+    <mxGraphModel dx="1869" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="osWAl8h6srayssOIopqq-1" value="" style="ellipse;fillColor=#000000;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-2" value="Отримання рецепту&#xa;--&#xa;OnEntry/сканування рецепту&#xa;Do/перевірка формату&#xa;OnExit/збереження даних" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-3" value="Перевірка валідності рецепту&#xa;--&#xa;OnEntry/завантаження бази дійсних рецептів&#xa;Do/перевірка терміну дії&#xa;OnExit/логування результату" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="220" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-4" value="Пошук препарату в базі&#xa;--&#xa;OnEntry/формування запиту&#xa;Do/пошук по категоріях&#xa;OnExit/оновлення інтерфейсу" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="360" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-5" value="Перевірка обмежень видачі&#xa;--&#xa;OnEntry/завантаження правил&#xa;Do/аналіз можливості видачі&#xa;OnExit/підтвердження" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="500" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-6" value="Реєстрація видачі&#xa;--&#xa;OnEntry/створення запису&#xa;Do/заповнення даних клієнта&#xa;OnExit/оновлення статусу рецепту" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="640" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-7" value="Оновлення статистики контрольованих речовин&#xa;--&#xa;OnEntry/підключення до реєстру&#xa;Do/відправка даних&#xa;OnExit/отримання підтвердження" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="780" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-8" value="Завершення обробки рецепту&#xa;--&#xa;OnEntry/архівування документів&#xa;OnExit/повернення в загальний процес продажу" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;spacingLeft=5;spacingRight=5;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="920" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-9" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="295" y="1050" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-1" target="osWAl8h6srayssOIopqq-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-11" value="scan(рецепт)/перевірка реквізитів" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-2" target="osWAl8h6srayssOIopqq-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-12" value="[рецепт валідний]/пошук за назвою" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-3" target="osWAl8h6srayssOIopqq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-13" value="[рецепт недійсний]/запит нового документа" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="osWAl8h6srayssOIopqq-3" target="osWAl8h6srayssOIopqq-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="265" />
+              <mxPoint x="80" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-14" value="[препарат знайдено]/перевірка категорії" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-4" target="osWAl8h6srayssOIopqq-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-15" value="search(аналоги)/розширений пошук" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;curved=1;" parent="1" source="osWAl8h6srayssOIopqq-4" target="osWAl8h6srayssOIopqq-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="383" />
+              <mxPoint x="670" y="428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-16" value="[видача дозволена]/внесення в реєстр" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-5" target="osWAl8h6srayssOIopqq-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-17" value="[обмеження порушено]/відмова у видачі" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="osWAl8h6srayssOIopqq-5" target="osWAl8h6srayssOIopqq-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-230" y="545" />
+              <mxPoint x="-230" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-18" value="[контрольована речовина]/звітування" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-6" target="osWAl8h6srayssOIopqq-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-19" value="[звичайний препарат]/закриття процесу" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="osWAl8h6srayssOIopqq-6" target="osWAl8h6srayssOIopqq-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="685" />
+              <mxPoint x="630" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-20" value="upload(дані)/підтвердження" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-7" target="osWAl8h6srayssOIopqq-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osWAl8h6srayssOIopqq-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="osWAl8h6srayssOIopqq-8" target="osWAl8h6srayssOIopqq-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
